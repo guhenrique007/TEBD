@@ -1,12 +1,12 @@
 $(document).ready(function() {
   var queryString =
-  "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>"+
-    "PREFIX j.0: <http://movieland.com/ufrrj/tebd/#>"+
-    "SELECT DISTINCT ?subject ?object"+
-    "WHERE {"+
-      "?subject ?predicate ?object"+
-      'FILTER(str(?predicate) = "http://movieland.com/ufrrj/tebd/#title")'+
-  "}";
+  'query=PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> '+
+        'PREFIX j.0: <http://movieland.com/ufrrj/tebd/#> '+
+        'SELECT DISTINCT ?subject ?object '+
+        'WHERE { ' +
+        '?subject ?predicate ?object ' +
+        'FILTER(str(?predicate) = "http://movieland.com/ufrrj/tebd/#title") '+
+        '} '
   listaFilmesAjax(queryString);
 });
 
@@ -25,7 +25,7 @@ $('select.lista-filmes').change(function() {
 });
 
 function listaFilmesAjax(queryString) {
-  fetch('http://localhost:3030/filmes/query', {
+  fetch('http://localhost:3030/filmes/sparql', {
           method: 'post',
           headers: new Headers({'content-type': 'application/x-www-form-urlencoded'}),
           body: queryString
@@ -33,7 +33,6 @@ function listaFilmesAjax(queryString) {
           return response.json();
           })
           .then(function (json) {
-              console.log(json.results.bindings);
               json.results.bindings.forEach(element => {
                 $('select.lista-filmes').append(
                     '<option>' + element.object.value + '</option>');
