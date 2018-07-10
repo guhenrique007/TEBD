@@ -37,7 +37,7 @@ function listaFilmesAjax(queryString) {
               json.results.bindings.forEach(element => {
                 $('select.lista-filmes').append(
                     '<option>' + element.object.value + '</option>');
-              }
+              })
           })
 }
 
@@ -54,6 +54,6 @@ function printaAtoresJson(queryString){
               console.log(json.results.bindings);
               json.results.bindings.forEach(element => {
                 div.appendChild(element.object.value + " \n");
-              }
+              })
           })
 }
