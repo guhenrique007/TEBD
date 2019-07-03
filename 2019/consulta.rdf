@@ -1,0 +1,10 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.0="http://movieland.com/ufrrj/tebd/#">
+  <rdf:Description rdf:about="http://movieland.com/ufrrj/tebd/#consulta/01"> 
+    <j.0:data_hora>10</j.0:data_hora>
+    <j.0:crm>10</j.0:crm>
+    <j.0:cpf>45350169840</j.0:cpf>
+  </rdf:Description>
+
+</rdf:RDF>

@@ -1,0 +1,15 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.0="http://movieland.com/ufrrj/tebd/#">
+  <rdf:Description rdf:about="http://movieland.com/ufrrj/tebd/#espec/1"> 
+    <j.0:codigo>1</j.0:codigo>
+    <j.0:nome>Ginecologista</j.0:nome>
+    <j.0:descricao>De buceta nois entende</j.0:descricao>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://movieland.com/ufrrj/tebd/#espec/2"> 
+    <j.0:codigo>2</j.0:codigo>
+    <j.0:nome>Cardiologista</j.0:nome>
+    <j.0:descricao>Cuido do seu coração</j.0:descricao>
+  </rdf:Description>
+</rdf:RDF>

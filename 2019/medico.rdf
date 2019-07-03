@@ -1,0 +1,11 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.0="http://movieland.com/ufrrj/tebd/#">
+  <rdf:Description rdf:about="http://movieland.com/ufrrj/tebd/#medico/01"> 
+    <j.0:crm>10</j.0:crm>
+    <j.0:nome>MC TH</j.0:nome>
+    <j.0:cod_especialidade>1</j.0:cod_especialidade>
+    <j.0:ano_formacao>2015</j.0:ano_formacao>
+    <j.0:valor_consulta>119</j.0:valor_consulta>
+  </rdf:Description>
+</rdf:RDF>

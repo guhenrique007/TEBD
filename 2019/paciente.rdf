@@ -1,0 +1,9 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.0="http://movieland.com/ufrrj/tebd/#">
+  <rdf:Description rdf:about="http://movieland.com/ufrrj/tebd/#paciente/01"> 
+    <j.0:cpf>45350169840</j.0:cpf>
+    <j.0:nome>Gustavo</j.0:nome>
+    <j.0:telefone_contato>990413995</j.0:telefone_contato>
+  </rdf:Description>
+</rdf:RDF>
