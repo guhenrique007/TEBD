@@ -1,4 +1,4 @@
-Sistema Web para gerar grade de horário de atendimento dos médicos(2019)
+Sistema Web para gerar grade de horário de consultas médicas
 
 * Instalando Fuseki
   * Start fuseki.bat file
