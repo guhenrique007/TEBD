@@ -4,10 +4,12 @@
  <meta charset="UTF-8" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Sriracha&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> 
+  <link rel="stylesheet" href="estilos.css">
   <script src="scripts/funcoes.js"></script>
   <script src="funcoesMedico.js"></script>
   <script type="text/javascript"></script>
@@ -15,31 +17,70 @@
 
 <body>
 
-  SELECIONE UM FILME:
-  <select class="lista-filmes" id="lista-filme" name="filme">
-    <option>FILME</option>
-  </select>
-  <br><br><br>
-  INFORMAÇÕES DO FILME: <br>
-  <div class="atores"></div>
-  <br><br>
-  ID DOS ATORES DO FILME:<br>
-  <div class="idAtores"></div>
+  <div class="header-desktop">
+      <img src="hospital.png" class="logo"></img>
+      <h1>HOSPITAL.com</h1>
+  </div>
 
-  <!--<button type="button" onclick="testeF();">Click Me!</button>-->
+  <div class="container">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
 
-  ESPECIALIDADES: <br>
-  <select class="lista-especialidades" id="lista-especialidade" name="especialidade">
-    <!--<option>ESPECIALIDADES</option>-->
-  </select> <br><br><br>
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
 
-  <div class="descricaoEspec" id="descEspec">o</div><br><br>
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="slide1.jpg" alt="Los Angeles" style="width:100%;">
+        </div>
+  
+        <div class="item">
+          <img src="Domiciliar-min.jpg" alt="Chicago" style="width:100%;">
+        </div>
+      
+        <div class="item">
+          <img src="slide2.jpg" alt="New york" style="width:100%;">
+        </div>
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+      </a>
+
+    </div>
+
+  </div>
+
+  <div class="principal">
+    <h2>BUSQUE CONSULTAS</h2>
+    ESPECIALIDADES: <br>
+    <select class="lista-especialidades" id="lista-especialidade" name="especialidade">
+      <!--<option>ESPECIALIDADES</option>-->
+    </select> <br><br><br>
+
+    <div class="descricaoEspec" id="descEspec"></div><br><br>
 
 
-  MÉDICOS: <br>
-  <select class="lista-medicos" id="lista-medico" name="medico">
-    <!--<option>ESPECIALIDADES</option>-->
-  </select> <br><br><br>
+    MÉDICOS ATENDENDO: <br>
+    <div class="medicos">
+      <ul class="nome-medico"></ul>
+      <div class="crmDiv"></div><br>
+      <div class="anoFormaçãoDiv"></div><br>
+      <div class="valorConsultaDiv"></div><br>
+      <div class="horarios"></div><br>
+    </div>
+  </div>
+
 
 
 
