@@ -10,7 +10,6 @@
   <link href="https://fonts.googleapis.com/css?family=Sriracha&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> 
   <link rel="stylesheet" href="estilos.css">
-  <script src="scripts/funcoes.js"></script>
   <script src="funcoesMedico.js"></script>
   <script type="text/javascript"></script>
 </head>
@@ -62,8 +61,7 @@
   </div>
 
   <div class="principal">
-    <h2>BUSQUE CONSULTAS</h2>
-    ESPECIALIDADES: <br>
+    ESPECIALIDADES:<br>
     <select class="lista-especialidades" id="lista-especialidade" name="especialidade">
       <!--<option>ESPECIALIDADES</option>-->
     </select> <br><br><br>
@@ -71,14 +69,30 @@
     <div class="descricaoEspec" id="descEspec"></div><br><br>
 
 
-    MÉDICOS ATENDENDO: <br>
+    <h2>MÉDICOS ATENDENDO:</h2> <br><br>
     <div class="medicos">
-      <ul class="nome-medico"></ul>
+      <ul class="nome-medico">
+      </ul>
       <div class="crmDiv"></div><br>
       <div class="anoFormaçãoDiv"></div><br>
       <div class="valorConsultaDiv"></div><br>
       <div class="horarios"></div><br>
+      
     </div>
+
+    <div class="horarios">
+        <table style="width:100%" class="tabela-horas">
+            <!--<tr class="dias">
+              <th>DOM</th>
+              <th>SEG</th>
+            </tr>
+            <tr>
+              <td>X</td>
+              <td>X</td>
+            </tr>-->
+        </table>
+    </div>
+
   </div>
 
 
